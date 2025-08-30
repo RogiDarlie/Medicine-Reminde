@@ -35,7 +35,6 @@ How the different sections communicate is illustrated through the arrows A-1 to 
 - [A-4] ContentView and the various sub-views has instances of the environment object of UserData, using it to display the different values throughout the application. 
 - [A-5] UserData checks the values it is supplied with from the health handler, and if the right parameters pass, it will schedule a notification through the notification handler.
 - [A-6] Dependent on whether the user responds to the app through the notification actions or in-app actions, the AppDelegate or ContentView will use the event handler to schedule a reminder for later if the user asks for it.
-
         
 After the notification has been dispatched, it is up to the user to react to the notification's actions. If the user answers yes to whether they have taken their medication, the boundary value will be increased to adjust because of a "false" warning.
 
